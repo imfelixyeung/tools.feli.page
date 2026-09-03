@@ -6,6 +6,11 @@ const tools = [
         description: "Paste HTML and get back clean, formatted code.",
         href: "/tools/clean-html",
     },
+    {
+        name: "Clipboard Inspector",
+        description: "Inspect everything currently on your clipboard.",
+        href: "/tools/clipboard-inspector",
+    },
 ] as const;
 
 const Home = () => {
