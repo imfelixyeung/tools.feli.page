@@ -65,13 +65,13 @@ export const CleanHTMLTool = () => {
     };
 
     return (
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col">
             <form
                 onSubmit={(e) => {
                     e.preventDefault();
                     form.handleSubmit();
                 }}
-                className="flex min-h-screen flex-col gap-6 py-6"
+                className="flex flex-1 flex-col gap-6 py-6"
             >
                 <fieldset className="fieldset flex grow flex-col">
                     <legend className="fieldset-legend">Input</legend>
