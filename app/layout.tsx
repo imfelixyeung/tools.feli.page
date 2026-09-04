@@ -13,7 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "tools.feli.page",
+    metadataBase: new URL("https://tools.feli.page"),
+    title: {
+        default: "tools.feli.page",
+        template: "%s — tools.feli.page",
+    },
     description: "A collection of useful web developer tools",
 };
 
@@ -23,7 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             lang="en"
             className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
         >
-            <body className="min-h-full flex flex-col">{children}</body>
+            <body className="flex min-h-full flex-col">{children}</body>
         </html>
     );
 }
